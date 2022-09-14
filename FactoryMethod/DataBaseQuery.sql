@@ -1,0 +1,9 @@
+CREATE TABLE LOGS (
+	id SERIAL,
+	mesg VARCHAR(20)	
+);
+
+SELECT * FROM LOGS;
+
+
+INSERT INTO LOGS (mesg) VALUES ('Test1');
