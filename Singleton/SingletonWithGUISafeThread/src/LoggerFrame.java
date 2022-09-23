@@ -1,3 +1,5 @@
+package src;
+
 import java.util.*;
 import java.io.*;
 import java.awt.*;
@@ -35,8 +37,7 @@ public class LoggerFrame extends JFrame {
 
 
 	    //Create the LogMessage button
-	    JButton LogMessageButton =
-	      new JButton(LoggerFrame.LOG_MESSAGE);
+	    JButton LogMessageButton = new JButton(LoggerFrame.LOG_MESSAGE);
 	    LogMessageButton.setMnemonic(KeyEvent.VK_V);
 	    JButton exitButton = new JButton(LoggerFrame.EXIT);
 	    exitButton.setMnemonic(KeyEvent.VK_X);

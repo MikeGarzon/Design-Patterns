@@ -1,3 +1,5 @@
+package src;
+
 public class FileLogger implements Logger {
 
   private static FileLogger logger;

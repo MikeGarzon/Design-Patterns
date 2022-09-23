@@ -1,3 +1,5 @@
+package src;
+
 public class ConsoleLogger implements Logger {
 
 	private static ConsoleLogger logger;
