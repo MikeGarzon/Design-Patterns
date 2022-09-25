@@ -38,7 +38,7 @@ public class LoggerFrame extends JFrame {
 
 	    //Create the LogMessage button
 	    JButton LogMessageButton = new JButton(LoggerFrame.LOG_MESSAGE);
-	    LogMessageButton.setMnemonic(KeyEvent.VK_V);
+	    LogMessageButton.setMnemonic(KeyEvent.VK_V); //Add keyboard shortcut
 	    JButton exitButton = new JButton(LoggerFrame.EXIT);
 	    exitButton.setMnemonic(KeyEvent.VK_X);
 	    ButtonHandler objButtonHandler = new ButtonHandler(this);
@@ -126,7 +126,7 @@ public class LoggerFrame extends JFrame {
 
   public static void main(String[] args) {
 	  JFrame frame = new LoggerFrame();
-	    frame.addWindowListener(new WindowAdapter() {
+	    frame.addWindowListener(new WindowAdapter() {  //Higher-order function
 	          public void windowClosing(WindowEvent e) {
 	            System.exit(0);
 	          }

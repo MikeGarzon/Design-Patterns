@@ -6,7 +6,7 @@ import java.util.*;
 
 public class FileUtil {
 
-  DataOutputStream dos;
+  DataOutputStream dos; // "default" access - only code in the same package can access this member
 
   /*
   	 Utility method to write a given text to a file
@@ -21,7 +21,7 @@ public class FileUtil {
       File outFile = new File(fileName);
       if (isAppendMode) {
         dos = new DataOutputStream(
-                new FileOutputStream(fileName, true));
+                new FileOutputStream(fileName, true)); //Higher Order Function
       } else {
         dos = new DataOutputStream(
                 new FileOutputStream(outFile));
@@ -38,6 +38,8 @@ public class FileUtil {
     return (true);
 
   }
+
+  //NOT USED METHODS IN THIS EXAMPLE  ----------------------------------------------------------------
 
   /*
    	 Reads data from a given file
