@@ -128,7 +128,7 @@ public class AutoSearchUI extends JFrame {
   public static void main(String[] args) {
     JFrame frame = new AutoSearchUI();
 
-    frame.addWindowListener(new WindowAdapter() {
+    frame.addWindowListener(new WindowAdapter() { //High order function
           public void windowClosing(WindowEvent e) {
             System.exit(0);
           }
@@ -162,8 +162,7 @@ class ButtonHandler implements ActionListener {
     }
     if (e.getActionCommand().equals(AutoSearchUI.SEARCH)) {
       //get input values
-      String vhCategory =
-        objAutoSearchUI.getSelectedCategory();
+      String vhCategory = objAutoSearchUI.getSelectedCategory();
       String vhType = objAutoSearchUI.getSelectedType();
 
       //get one of src.Luxury or src.NonLuxury vehicle factories

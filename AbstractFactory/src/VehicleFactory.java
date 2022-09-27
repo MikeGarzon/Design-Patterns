@@ -14,7 +14,7 @@ public abstract class VehicleFactory {
     if (type.equals(VehicleFactory.SUV))
       return new SUVVehicleFactory();
     if (type.equals(VehicleFactory.EM))
-      return new ElectricMotorcycleVehicleFactory();
+      return new MotorcycleVehicleFactory();
     return new CARVehicleFactory();
   }
 
