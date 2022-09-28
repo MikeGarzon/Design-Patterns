@@ -10,8 +10,8 @@ public class AutoSearchUI extends JFrame {
   public static final String newline = "\n";
   public static final String SEARCH = "Search";
   public static final String EXIT = "Exit";
-  public static final String LUXURY = "src.Luxury";
-  public static final String NON_LUXURY = "Non-src.Luxury";
+  public static final String LUXURY = "Luxury";
+  public static final String NON_LUXURY = "Non-Luxury";
 
 
   private JComboBox cmbVehicleCategory, cmbVehicleType;
@@ -165,7 +165,7 @@ class ButtonHandler implements ActionListener {
       String vhCategory = objAutoSearchUI.getSelectedCategory();
       String vhType = objAutoSearchUI.getSelectedType();
 
-      //get one of src.Luxury or src.NonLuxury vehicle factories
+      //get one of Luxury or NonLuxury vehicle factories
       VehicleFactory vf =
         VehicleFactory.getVehicleFactory(vhType);
 

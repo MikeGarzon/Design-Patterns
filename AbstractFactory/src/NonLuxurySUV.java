@@ -9,7 +9,7 @@ public class NonLuxurySUV implements NonLuxury {
     return name;
   }
   public String getNLFeatures() {
-    return "Non-src.Luxury SUV Features ";
+    return "Non-Luxury SUV Features ";
   };
 
 } // End of class

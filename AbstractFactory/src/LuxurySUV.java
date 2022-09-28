@@ -9,7 +9,7 @@ public class LuxurySUV implements Luxury {
     return name;
   }
   public String getLuxuryFeatures() {
-    return "src.Luxury SUV Features ";
+    return "Luxury SUV Features ";
   };
 
 } // End of class

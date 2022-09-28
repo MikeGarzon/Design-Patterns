@@ -9,6 +9,6 @@ public class  NonLuxuryMotorcycle implements NonLuxury{
         return name;
     }
     public String getNLFeatures() {
-        return "Non-src.Luxury  Motorcycle Features ";
+        return "Non-Luxury  Motorcycle Features ";
     };
 }

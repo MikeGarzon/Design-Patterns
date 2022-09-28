@@ -9,7 +9,7 @@ public class LuxuryCAR implements Luxury {
     return name;
   }
   public String getLuxuryFeatures() {
-    return "src.Luxury Car Features ";
+    return "Luxury Car Features ";
   };
 
 } // End of class

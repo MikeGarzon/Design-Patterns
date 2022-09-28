@@ -9,7 +9,7 @@ public class NonLuxuryCAR implements NonLuxury {
     return name;
   }
   public String getNLFeatures() {
-    return "Non-src.Luxury CAR Features ";
+    return "Non-Luxury CAR Features ";
   };
 
 } // End of class

@@ -9,6 +9,6 @@ public class LuxuryMotorcycle implements Luxury{
         return name;
     }
     public String getLuxuryFeatures() {
-        return "src.Luxury Motorcycle Features ";
+        return "Luxury Motorcycle Features ";
     };
 }
