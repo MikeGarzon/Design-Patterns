@@ -57,7 +57,7 @@ public class DeepCopyTest {
         p.getName() + " - " +
         p.getCar().getName());
 
-    // Clone as a shallow copy
+    // Clone as a Deep copy
     Person q = (Person) p.clone();
 
     System.out.println("Clone (before change): " +
