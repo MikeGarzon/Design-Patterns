@@ -8,7 +8,7 @@ public abstract class FileSystemPart {
   public FileSystemPart(String cName) {
     name = cName;
   }
-  public void addComponent(FileSystemPart component)
+    public void addComponent(FileSystemPart component)
   throws CompositeException {
     throw new CompositeException(
       "Invalid Operation. Not Supported");

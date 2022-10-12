@@ -3,7 +3,7 @@ package src;
 import java.util.*;
 
 public class CompositeDemo {
-  public static final String SEPARATOR = ", ";
+  public static final String SEPARATOR = ", "; //Not used
 
   public static void main(String[] args) {
     FileSystemPart mainFolder =
