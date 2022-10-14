@@ -40,6 +40,6 @@ public class CertifiedCandidates implements Iterator {
     }
   }
 
-  public void remove() {};
+  public void remove() {}; //Not implemented
 
 }
