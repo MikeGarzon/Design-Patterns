@@ -8,8 +8,8 @@ class CAAddressAdapter extends AddressValidator {
 
   private CAAddress objCAAddress;
 
-  public CAAddressAdapter(CAAddress address) {
-    objCAAddress = address;
+  public CAAddressAdapter() {
+    objCAAddress = new CAAddress();
   }
   public boolean isValidAddress(String inp_address,
       String inp_zip, String inp_state) {
