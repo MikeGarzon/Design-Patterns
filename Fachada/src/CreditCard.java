@@ -6,7 +6,7 @@ public class CreditCard {
   String cardNumber;
   String cardExpDate;
 
-  final String CC_DATA_FILE = "CC.txt";
+  final String CC_DATA_FILE = "src/cc.txt";
 
   public CreditCard(String ccType, String ccNumber,
                     String ccExpDate) {

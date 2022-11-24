@@ -254,8 +254,7 @@ class ButtonHandler implements ActionListener {
       String city = objAccountManager.getCity();
       String state = objAccountManager.getAddrState();
       String cardType = objAccountManager.getCardType();
-      String cardNumber =
-        objAccountManager.getCardNumber();
+      String cardNumber = objAccountManager.getCardNumber();
       String cardExpDate = objAccountManager.getExpDate();
 
       // Create a facade instance
