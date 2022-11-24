@@ -53,20 +53,19 @@ public class CustomerFacade {
     objAccount = new Account(fname, lname);
     if (objAccount.isValid() == false) {
       validData = false;
-      errorMessage = "Invalid FirstName/LastName";
+      errorMessage += "Invalid FirstName/LastName";
     }
 
     objAddress = new Address(address, city, state);
     if (objAddress.isValid() == false) {
       validData = false;
-      errorMessage = "Invalid Address/City/State";
+      errorMessage += "\nInvalid Address/City/State";
     }
 
-    objCreditCard = new CreditCard(cardType, cardNumber,
-                    cardExpDate);
+    objCreditCard = new CreditCard(cardType, cardNumber, cardExpDate);
     if (objCreditCard.isValid() == false) {
       validData = false;
-      errorMessage = "Invalid CreditCard Info";
+      errorMessage += "\nInvalid CreditCard Info";
     }
 
     if (!validData) {
@@ -74,8 +73,7 @@ public class CustomerFacade {
       return false;
     }
 
-    if (objAddress.save() && objAccount.save() &&
-        objCreditCard.save()) {
+    if (objAddress.save() && objAccount.save() && objCreditCard.save()) {
 
       return true;
     } else {

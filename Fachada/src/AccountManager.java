@@ -259,6 +259,8 @@ class ButtonHandler implements ActionListener {
 
       // Create a facade instance
       CustomerFacade facade = new CustomerFacade();
+
+      //Passing the interface values to the Facade Object
       facade.setFName(firstName);
       facade.setLName(lastName);
       facade.setAddress(address);
@@ -281,8 +283,7 @@ class ButtonHandler implements ActionListener {
 
       }
 
-      objAccountManager.setResultDisplay(
-        validateCheckResult);
+      objAccountManager.setResultDisplay(validateCheckResult);
     }
   }
 
