@@ -4,7 +4,7 @@ import java.util.*;
 
 public class LoggerDecorator implements Logger {
 
-  Logger logger;
+  Logger logger; //Wrapper
 
   public LoggerDecorator(Logger inp_logger) {
     logger = inp_logger;

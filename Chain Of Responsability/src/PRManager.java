@@ -22,10 +22,10 @@ public class PRManager {
     manager.branchManager.authorize(request);
 //Fourth purchase request
     request = new PurchaseRequest(4, "Data server and Web server",1800000);
-    manager.branchManager.authorize(request);
+    System.out.println(manager.branchManager.authorize(request));
     //Fifth purchase request
     request = new PurchaseRequest(5, "Common AD Campaign ",3800000);
-    manager.branchManager.authorize(request);
+    System.out.println(manager.branchManager.authorize(request));
   }
 
   public void createAuthorizationFlow() {
